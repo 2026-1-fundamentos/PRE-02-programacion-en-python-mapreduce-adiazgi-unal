@@ -4,8 +4,8 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": "always"
     },
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
     "makefile.configureOnOpen": false,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
@@ -19,4 +19,11 @@
         "black"
     ],
     "editor.detectIndentation": false,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./tests",
+        "-p",
+        "*test.py"
+    ],
 }
